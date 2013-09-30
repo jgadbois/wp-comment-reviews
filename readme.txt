@@ -1,54 +1,36 @@
 === WordPress Plugin ===
 
-Contributors: nickohrn
-Donate link: http://example.com/
-Tags: tag1, tag2, tag3
+Contributors: jgadbois
+Donate link: http://www.johngadbois.com
+Tags: comments, reviews
 Requires at least: 3.6
 Tested up to: 3.6
 Stable tag: 1.0.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Here is a short description of the plugin. This should be no more than 150 characters. No markup here.
+A simple plugin for adding review and rating functionality to WordPress comments.
 
 == Description ==
 
-This is the long description. No limit, and you can use Markdown (as well as in the following sections).
+A simple plugin for adding review and rating functionality to WordPress comments.
 
-For backwards compatibility, if this section is missing, the full length of the short description will be used, and
-Markdown parsed.
+The plugin provides a series of templates for adding review functionality to your comments
 
-A few notes about the sections above:
+Here's a few of them:
 
-* "Contributors" is a comma separated list of wp.org/wp-plugins.org usernames
-* "Tags" is a comma separated list of tags that apply to the plugin
-* "Requires at least" is the lowest version that the plugin will work on
-* "Tested up to" is the highest version that you've *successfully used to test the plugin*. Note that it might work on
-higher versions... this is just the highest one you've verified.
-* Stable tag should indicate the Subversion "tag" of the latest stable version, or "trunk," if you use `/trunk/` for
-stable.
-
-Note that the `readme.txt` of the stable tag is the one that is considered the defining one for the plugin, so
-if the `/trunk/readme.txt` file says that the stable tag is `4.3`, then it is `/tags/4.3/readme.txt` that'll be used
-for displaying information about the plugin. In this situation, the only thing considered from the trunk `readme.txt`
-is the stable tag pointer. Thus, if you develop in trunk, you can update the trunk `readme.txt` to reflect changes in
-your in-development version, without having that information incorrectly disclosed about the current stable version
-that lacks those changes -- as long as the trunk's `readme.txt` points to the correct stable tag.
-
-If no stable tag is provided, it is assumed that trunk is stable, but you should specify "trunk" if that's where
-you put the stable version, in order to eliminate any doubt.
+1. csr_get_rating_star_form() - adds the review stars to the comment form.  Ratings are automatically saved
+1. csr_get_rating_star_form_label() - a label for the review star field
+1. csr_get_rating_stars($comment_id = 0) - a view only view of the rating stars for a comment 
+1. csr_get_comment_rating($comment_id = 0) - the numeric rating for a comment
+1. csr_get_overall_rating($post_id = 0) - the average rating for a post
+1. csr_get_overall_rating_stars($post_id = 0) - the stars representing the average rating for a post
+1. csr_get_rating_count($post_id = 0) - the number of ratings for a post
 
 == Installation ==
 
-1. Upload `wp-plugin-skeleton` to the `/wp-content/plugins/` directory
+1. Upload the plugin zip file to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Click the 'Settings' link in the plugins row to configure the plugin
-
-== Frequently Asked Questions ==
-
-= A question that someone might have =
-
-An answer to that question.
 
 == Screenshots ==
 
@@ -63,15 +45,3 @@ directory take precedence. For example, `/assets/screenshot-1.png` would win ove
 = 1.0 =
 
 * Initial release
-
-== Upgrade Notice ==
-
-= 1.0 =
-
-Upgrade notices describe the reason a user should upgrade. No more than 300 characters.
-
-== Arbitrary section ==
-
-You may provide arbitrary sections, in the same format as the ones above. This may be of use for extremely complicated
-plugins where more information needs to be conveyed that doesn't fit into the categories of "description" or
-"installation." Arbitrary sections will be shown below the built-in sections outlined above.
