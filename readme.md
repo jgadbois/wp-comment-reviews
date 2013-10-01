@@ -1,4 +1,4 @@
-# WordPress Plugin
+# Comment Rating Stars
 
 Contributors: jgadbois
 Donate link: http://www.johngadbois.com
@@ -15,7 +15,7 @@ A simple plugin for adding review and rating functionality to WordPress comments
 
 A simple plugin for adding review and rating functionality to WordPress comments.
 
-The plugin provides a series of templates for adding review functionality to your comments
+The plugin provides a series of template tags for adding review functionality to your comments
 
 Here's a few of them:
 
