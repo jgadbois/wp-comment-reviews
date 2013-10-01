@@ -186,7 +186,7 @@ if(!class_exists('Comment_Review_Stars')) {
     public static function get_rating_star_form_label() {
       ob_start();
 
-      ?><label>Rating</label><?php
+      ?><label class='review-rating-label'>Rating</label><?php
       
       $output = ob_get_contents();
       ob_end_clean();
