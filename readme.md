@@ -1,4 +1,4 @@
-=== WordPress Plugin ===
+# WordPress Plugin
 
 Contributors: jgadbois
 Donate link: http://www.johngadbois.com
@@ -11,7 +11,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 A simple plugin for adding review and rating functionality to WordPress comments.
 
-== Description ==
+## Description
 
 A simple plugin for adding review and rating functionality to WordPress comments.
 
@@ -27,19 +27,19 @@ Here's a few of them:
 1. csr_get_overall_rating_stars($post_id = 0) - the stars representing the average rating for a post
 1. csr_get_rating_count($post_id = 0) - the number of ratings for a post
 
-== Installation ==
+## Installation
 
 1. Upload the plugin zip file to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
 
-== Screenshots ==
+## Screenshots
 
 1. An example review form
 2. An example review
 3. An example total ratings section
 
-== Changelog ==
+## Changelog
 
-= 1.0 =
+### 1.0
 
 * Initial release
